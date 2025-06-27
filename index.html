@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SBSS AGRICULTURE BHANASHIVRE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="teaching"href="teching.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+  
+  <!-- ----------------------------------header------------------------------------------ -->
+  <style>
+      .program-card img {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+      }
+
+      body {
+        
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Navigation */
+.top-nav {
+  background-color: #0b0b0b;
+}
+
+.top-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.top-nav li {
+  padding: 14px 20px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-nav a:hover {
+  color: orange;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Main Header */
+.main-header {
+  background: linear-gradient(to right, #f1eeb1, #eef0a6);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.side-logo {
+  height: 150px;
+  width: auto;
+  
+}
+
+.title-section {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.title-section h1 {
+  color: red;
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.title-section h2 {
+  color: #0047ab;
+  font-size: 26px;
+  margin: 0;
+}
+
+.title-section p {
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #444;
+}
+
+.title-section strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #003300;
+}
+
+/* blank navbar */
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Blank Navbar Style */
+.blank-navbar {
+  width: 100%;
+  height: 30px;
+  background-color: #48eb6e; /* Dark blackish color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* faculty */
+/* Dropdown Container */
+.top-nav .dropdown {
+  position: relative;
+}
+
+/* Hide the dropdown menu by default */
+.top-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 999;
+}
+
+/* Dropdown menu items */
+.top-nav .dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Show menu on hover */
+.top-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: hover effect */
+.top-nav .dropdown-menu li a:hover {
+  background-color: #333;
+}
+
+
+      .top-banner {
+        background-image: url('your-banner-image.jpg');
+        /* Replace with your banner image */
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .top-banner .btn {
+        margin: 5px;
+        border: 1px solid orange;
+        background: transparent;
+        color: white;
+      }
+
+      .program-card {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .program-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .program-overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        width: 100%;
+        padding: 10px;
+      }
+
+      /* ---------------------- Mobile View Only ---------------------- */
+@media (max-width: 768px) {
+  .top-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-nav li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .side-logo {
+    height: 100px;
+    margin: 10px 0;
+  }
+
+  .title-section h1 {
+    font-size: 20px;
+  }
+
+  .title-section h2 {
+    font-size: 18px;
+  }
+
+  .title-section p, .title-section strong {
+    font-size: 12px;
+  }
+
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .blank-navbar {
+    height: 20px;
+  }
+
+  .top-banner {
+    height: 120px;
+  }
+
+  .top-banner .btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .program-card img {
+    height: 120px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+  }
+
+  .dropdown-menu li {
+    text-align: center;
+  }
+}
+      .dropdown-menu {
+        position: absolute;
+        background-color: #111;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        z-index: 999;
+      }
+
+      .dropdown-menu li a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+      }
+
+      .dropdown-menu li a:hover {
+        background-color: #333;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .top-nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .top-nav li {
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+        }
+      }
+      /* Mobile Menu Toggle */
+#nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 28px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #111;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    width: 100%;
+  }
+
+  #nav-links.show-menu {
+    display: flex;
+  }
+
+  #nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+
+  .top-nav .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .top-nav .dropdown:active .dropdown-menu,
+  .top-nav .dropdown.show .dropdown-menu {
+    display: block;
+  }
+}
+/* footer */
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 15px;
+      color: #f0c040;
+    }
+
+    .footer-section p {
+      line-height: 1.6;
+    }
+
+    .footer-section a {
+      color: #fff;
+      margin-right: 15px;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .footer-section a:hover {
+      color: #f0c040;
+      transform: scale(1.2);
+    }
+
+    .social-icons i {
+      font-size: 24px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+
+    .map-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      margin-top: 10px;
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-section {
+        min-width: 100%;
+      }
+    }
+
+
+    </style>
+
+
+
+
+
+</head>
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("nav-links");
+    nav.classList.toggle("show-menu");
+  }
+</script>
+
+
+<body>
+
+  <!-- Top Navigation Menu -->
+  <!-- Top Navigation Menu -->
+<div class="top-nav">
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  <ul id="nav-links">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT US</a></li>
+    <li><a href="#">ADMISSION</a></li>
+    <li><a href="#">DEPARTMENT</a></li>
+    <li class="dropdown">
+      <a href="#">FACULTY</a>
+      <ul class="dropdown-menu">
+        <li><a href="teching.html">Teaching Staff</a></li>
+        <li><a href="nonteaching.html">Non-Teaching Staff</a></li>
+      </ul>
+    </li>
+    <li><a href="#">NEWS & EVENTS</a></li>
+    <li><a href="#">STUDENTS CORNER</a></li>
+    <li><a href="#">LIBRARY</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+</div>
+
+
+  <!-- Header with Logos and College Title -->
+  <div class="main-header">
+    <img src="img/BELHEKAR_CLG_LOGO_-removebg-preview.png" class="side-logo" alt="Left Logo">
+    <div class="title-section">
+      <h2>SBSS</h2>
+      <h2>Sulochana Belhekar Samajik & Bahu-uddeshiya Shikshan Sanstha's</h2>
+      <h1>COLLEGE OF AGRICULTURE BHANASHIVRE</h1>
+      <p>Affiliated To<br>
+        MAHATAMA PHULE KRISHI VIDYAPEETH, RAHURI (M.S.)<br>
+
+      </p>
+      <strong>Tel- Newasa, Dis-Ahilyanagar 414602 (M.S.)</strong>
+    </div>
+    <img src="img/WhatsApp_Image_2025-06-25_at_15.43.47_42b8c0d4-removebg-preview.png" class="side-logo"
+      alt="Right Logo">
+  </div>
+  <!-- border -->
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Blank Navbar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- Blank Navigation Bar -->
+    <header class="blank-navbar">
+      <!-- You can add logo/menu later here -->
+    </header>
+
+
+  </body>
+
+  </html>
+
+
+  <!-- Auto Sliding Carousel -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"  style="max-width: 2000px; margin: auto;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slide 0.jpg" class="d-block w-100" height="700px" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide 1.jpg" class="d-block w-100" height="700px" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide 2.jpg" class="d-block w-100" height="700px" alt="Image 3">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide 3.jpg" class="d-block w-100" height="700px" alt="Image ">
+      </div>
+
+    </div>
+
+    <!-- Optional Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <!-- ----------------------------------end header------------------- -->
+<!-- this is ayushas part -->
+ <div class="container">
+    <section class="events-section">
+      <h2 class="section-title">LATEST EVENTS <a href="#" class="view-more">View More »</a></h2>
+
+      <div class="event">
+        <div class="event-date">
+          <span class="day">21</span>
+          <span class="month-year">Jun' 2025</span>
+        </div>
+        <div class="event-info">
+          <p class="event-title">बेल्हेकर कृषी महाविद्यालयात</p>
+          <p class="event-location">🏛 Belhekar Campus,  Bhanashiware</p>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-date">
+          <span class="day">13</span>
+          <span class="month-year">Jun' 2025</span>
+        </div>
+        <div class="event-info">
+          <p class="event-title">पाणी फाउंडेशनचा रोजगार</p>
+          <p class="event-location">🏛 Belhekar College of Agriculture</p>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-date">
+          <span class="day">7</span>
+          <span class="month-year">May' 2025</span>
+        </div>
+        <div class="event-info">
+          <p class="event-title">Blood Donation camp organized</p>
+          <p class="event-location">🏛 Belhekar Campus,  Bhanashiware</p>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-date">
+          <span class="day">14</span>
+          <span class="month-year">Apr' 2025</span>
+        </div>
+        <div class="event-info">
+          <p class="event-title">Celebration of Dr. Babasaheb Ambedkar 134th Jayanti</p>
+          <p class="event-location">🏛 Belhekar Campus,  Bhanashiware</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="video-section">
+      <div class="tabs">
+        <button class="tab active">TOUR</button>
+        <button class="tab">GALLERY</button>
+      </div>
+      <div class="video-container">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="CSMSS Documentary" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </aside>
+  </div>
+  <!-- ayushas work end -->
+   <!-------------------------------- piyush code-----------------------------------  -->
+   <body>
+    <div class="container">
+        <!-- Latest News Section -->
+        <div class="section latest-news">
+            <h2>Latest News <a href="#" class="view-more">View More »</a></h2>
+            <div class="news-item">
+                <div class="news-date">
+                    <span>16</span>
+                    <small>Apr 2025</small>
+                </div>
+                <p class="news-title"><a href="#">Celebration of Dr. Babasaheb Ambedkar 134th Jayanti</a></p>
+            </div>
+            <div class="news-item">
+                <div class="news-date">
+                    <span>9</span>
+                    <small>Apr 2025</small>
+                </div>
+                <p class="news-title"><a href="#">बारावीनंतर कृषी शिक्षणातील संधी..</a></p>
+            </div>
+            <div class="news-item">
+                <div class="news-date">
+                    <span>9</span>
+                    <small>Jul 2024</small>
+                </div>
+                <p class="news-title"><a href="#">Celebration of Krushi Din (Vasantrao Naik Birth Anniversary)</a></p>
+            </div>
+            <div class="news-item">
+                <div class="news-date">
+                    <span>4</span>
+                    <small>Jul 2024</small>
+                </div>
+                <p class="news-title"><a href="#">Succeeding students in MCAER PG CET-2024</a></p>
+            </div>
+        </div>
+
+        <!-- Awards & Recognition Section -->
+        <div class="section awards">
+            <h2>Awards & Recognition</h2>
+            <ul>
+                <li><i class="icon-checkmark">✔</i> <a href="#">Awishakar - 2017</a></li>
+                <li><i class="icon-checkmark">✔</i> <a href="#">Inter Collegiate Youth Festival Awards 2019</a></li>
+                <li><i class="icon-checkmark">✔</i> <a href="#">Excellent Agri Student Award</a></li>
+                <li><i class="icon-checkmark">✔</i> <a href="#">Selection in VNMKV, Parbhani Team</a></li>
+                <li><i class="icon-checkmark">✔</i> <a href="#">MAHA AGRO IDOL AWARD-2023</a></li>
+                <li><i class="icon-checkmark">✔</i> <a href="#">Three students selected as Taluka Agriculture Officers</a></li>
+                <li><i class="icon-checkmark">✔</i> <a href="#">University Team Selection</a></li>
+                <li><i class="icon-checkmark">✔</i> <a href="#">Mahamitra</a></li>
+                <li><i class="icon-checkmark">✔</i> <a href="#">Sports Achievement at VNMKV, Parbhani</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Request Section -->
+    <div class="request-section">
+        <div class="request-icon">✎</div>
+        <div class="request-text">
+            <h4>Send Your Request To Us</h4>
+            <a href="tel:+919922668199">Call Us On: +91-9922668199</a> Or 
+            <a href="#">Fill in Our Enquiry Form</a>
+        </div>
+        <button class="enquire-now-btn" onclick="openEnquiryForm()">ENQUIRE NOW</button>
+    </div>
+
+    <!-- Enquiry Form Modal -->
+    <div class="modal-overlay" id="enquiryModal">
+        <div class="modal">
+            <button class="close-btn" onclick="closeEnquiryForm()">×</button>
+            <h2>Submit Your Enquiry</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Type your name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Type your email" required>
+                
+                <label for="mobile">Mobile</label>
+                <input type="tel" id="mobile" placeholder="Type your mobile" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Type your message"></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function openEnquiryForm() {
+            document.getElementById('enquiryModal').style.display = 'flex';
+        }
+
+        function closeEnquiryForm() {
+            document.getElementById('enquiryModal').style.display = 'none';
+        }
+    </script>
+</body>
+
+<!-- ---------------------------------this is footer---------------------- -->
+
+
+  <footer>
+    <div class="footer-container">
+
+      <!-- Contact Us -->
+    <!-- Contact Us -->
+<div class="footer-section">
+  <h3>Contact Us</h3>
+  <p><i class="fas fa-map-marker-alt"></i> Belhekar Group Of Institutes, Bhanashiware, Shevgaon Road, Newasa, Tal‑Newasa, Dist Ahmednagar, 414609</p>
+  <p><i class="fas fa-phone"></i> <a href="tel:+918308341675"> +91 (02427) 297099</a></p>
+  <p><i class="fas fa-phone"></i> <a href="tel:+919075248602">+91 8308341675</a></p>
+  <p><i class="fas fa-envelope"></i> <a href="mailto:mba5323@gmail.com"> 1174office@msbte.ac.in</a></p>
+  <p><i class="fas fa-envelope"></i> <a href="mailto:mba5323@gmail.com"> 1174principal@msbte.ac.in</a></p>
+</div>
+
+
+      <!-- Google Map -->
+      <div class="footer-section">
+        <h3>Find Us on Map</h3>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps?q=Belhekar+Group+Of+Institutes+Bhanashiware+Shevgaon+Road+Newasa+Dist+Ahmednagar+414609&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Follow Us & About Us -->
+      <div class="footer-section">
+        <h3>Follow Us On</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <br>
+        <h3>About Us</h3>
+        <p>
+          Belhekar College of Agriculture, Nevasa, and its parent Belhekar Group Of Institutes, established by Sulochana Belhekar Samajik va Bahuddeshiya Shikshan Sanstha, are committed to empowering rural students through quality agricultural, technical, and professional education. Located in Bhanashiware, the institute bridges traditional farming practices with modern technologies, fostering community development, sustainable farming, and youth empowerment to nurture the next generation of professionals.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      &copy; 2025 Belhekar Group of Institutes. All Rights Reserved. | Designed & Developed by <strong>Websums Software Pvt Ltd</strong>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!-- --------------------------------------this is main body -------------------------------------------------->
+</body> 
+
+</html>
